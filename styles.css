@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.Containers_HeaderContainer {
+  margin-top: 9%; /* Add a margin at the bottom to create space */
+}
+
+header {
+  border: none;
+  outline: none;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 86px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  z-index: 1000;
+  /* background-color: var(--color-white); */
+
+  background-color: white;
+}
+
+.logo {
+  width: 178px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo svg {
+  width: 134px;
+  height: 30px;
+}
+.location {
+  width: 320px;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.location .location-title {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+.location-title {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.location-desc {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+.location p {
+  text-align: center;
+}
+
+.location-desc .fa-sort-down {
+  transform: translateY(-2px);
+  padding-left: 5px;
+}
+
+.searchbar {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  background: var(--color-gray2);
+  color: var(--color-gray);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+}
+.searchbar input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: var();
+  width: 100%;
+}
+.searchbar .fa-magnifying-glass {
+  width: 20px;
+  height: 20px;
+  color: var(--color-black);
+}
+.search-input {
+  width: 100%;
+}
+.login {
+  width: 162px;
+  font-size: 18px;
+  color: rgb(54, 54, 54);
+  font-weight: var(--fw-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 86px;
+}
+.cart {
+  width: 112px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 32px;
+  margin-left: 12px;
+}
+
+.cart button {
+  padding: 6px;
+  color: white;
+  background-color: var(--color-green);
+  border: 0;
+  border-radius: 8px;
+  height: 52px;
+  width: 112px;
+  font-size: 14px;
+  font-weight: var(--fw-800);
+}
+
+.cart button {
+  background-color: green; /* Change to the desired green color */
+}
+
+.fa-cart-shopping {
+  font-size: 21px;
+}
+.fa-cart-shopping:hover {
+  animation: 0.6s ease 0s 2 normal none running animation;
+}
+@keyframes animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.profile {
+  display: none;
+}
+
+/* Container_One */
+
+.full-width {
+  width: 100%;
+  height: auto;
+}
+
+/* Container two */
+
+.row2 {
+  overflow-x: auto;
+}
+
+.scrollable-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.scrollable-image {
+  flex: 0 0 auto;
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+  padding: 1%;
+}
+
+/* Container three  */
+
+.row3 {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    10,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  grid-gap: 10px; /* Adjust the gap between images as needed */
+  overflow: auto;
+}
+
+.grid-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Section four  */
+
+.row4 {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+}
+
+.slider-box {
+  flex: 0 0 auto;
+  margin-right: 12px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.slider-image {
+  width: 60%;
+  height: auto;
+}
+
+.product-name {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.product-weight,
+.product-money {
+  font-size: 14px;
+}
+
+.add-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  /* background-color: #ffffff; */
+  color: rgb(49, 134, 22);
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid rgb(49, 134, 22);
+  background-color: rgb(247, 255, 249);
+  border-radius: 0.375rem;
+}
+
+/* footer */
+.Footer_FooterContainer p {
+  display: block;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  padding: 10px;
+}
